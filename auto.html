@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" type="image/x-icon" href="./image/icon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Авторизация</title>
+
+	<style type="text/css">
+		
+		.block{
+			width: 300px;
+			height: 406px;
+			position: absolute;
+			left: 650px;
+			top: 280px;
+			background-image: url(./image/kot.jpg);
+			background-position: top;
+			border: solid;
+			border-width: 0;
+			border-radius: 20px 0 0 20px
+
+		}
+
+		.block1{
+			width: 300px;
+			height: 406px;
+			background-image: url(./image/78.png);
+			position: absolute;
+			left: 950px;
+			top: 280px;
+			border: solid;
+			border-width: 0;
+			border-radius: 0 20px 20px 0;
+		}
+
+		p{
+			position: absolute;
+			top: 250px;
+			left: 85px;
+			font-size: 18pt;
+		}
+
+		.name{
+			position: absolute;
+			bottom: 50px;
+			left: 60px
+		}
+
+		.d{
+			position: absolute;
+			top: 110px;
+			left: 50px;
+
+		}
+
+		.in{
+			height: 25px;
+			width: 200px;
+		}
+
+		.in2{
+			height: 30px;
+			width: 208px;
+		}
+
+		.st{
+
+			height: 35px;
+			background-color: orange;
+			border: sold;
+			border-color: orange;
+			border-radius: 10px;
+			position: absolute;
+			left: 70px;
+			top: 180px;
+		}
+
+	</style>
+</head>
+<body style="background-image: url(./image/bd.png);">
+	
+	<div class="block">
+		<p>Авторизация</p>
+	</div>
+	<div class="block1">
+		<div class="d">
+			<label for="name">E-mail</label><br>
+			<input type="text" name="name" class="in"><br><br>
+
+			<label for="first-name">Пароль</label><br>
+			<input type="text" name="first-name" class="in"><br><br>
+
+			<a style="color: white" href="#"><label style="position: absolute; left: 90px" for="parol'" class="parol">Забыли пароль?</label></a>
+			
+			<a href="index.html"><input type="submit" name="otpr" value="Вход" class="st"></a>
+
+		</div>
+	</div>
+</body>
+</html>

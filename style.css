@@ -1,0 +1,307 @@
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0; /*//не было лишних краев*/
+  font-family: Consolas, sans-serif;/* //изменение шрифта*/
+  background-image: url(./image/black.png); 
+}
+
+header { 
+  display: flex;  /*включаем режим flexbox*/
+  flex-direction: row; /* элементы в строке*/
+  justify-content: space-between; /*распределение элементов внутри шапки*/
+  flex-wrap: wrap; /*перенос элементов на новую строку*/
+  background-color: gray;
+  padding: 20px 10px;
+}
+
+.logo { 
+  display: flex;
+  align-items: center;
+ 
+}
+
+header a {
+  color: #212121;
+  padding: 12px;
+  text-decoration: none; /*убирает подчеркинования */
+  font-size: 18px; 
+  border-radius: 4px;
+
+}
+
+
+header a.log {
+  font-size: 25px;
+  font-weight: bold;
+  position: relative; /*уставливается относительно его исходного места*/
+  left: 150px;
+}
+
+header img{
+  position: relative;
+  left: 150px;
+}
+
+.vot1{
+  position: relative;
+  left: 280px;
+}
+
+header a:hover{
+  background-color: orange;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  }
+
+#nave{
+  display: flex;
+  align-items: center;
+}
+
+.vot{
+  position: relative;
+  right: 50px;
+}
+
+.form{
+  position: relative;
+  left: 100px;
+
+}
+
+#search{
+  height: 30px;
+  border: solid;
+  border-color: orange;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 5px 2px 5px 25px;
+  background: url('http://3.bp.blogspot.com/-4w14hQHr5yQ/Tgm6u7KwUkI/AAAAAAAACAI/Hu2poBOPx3g/s25/search.png') no-repeat scroll 0 50%;
+  background-color: white;
+
+}
+
+.menu{
+  width: 975px;
+  height: 350px;
+  background-color: gray;
+  position: absolute;
+  top: 100px;
+  left: 480px;
+  border: solid;
+  border-color: gray;
+  border-radius: 5px;
+}
+
+.photo p{
+  text-align: center
+}
+.photo{
+  max-width: 180px;
+}
+
+.imga{
+  position: absolute;
+  left: 200px;
+  top: 60px;
+  max-width: 190px;
+}
+.imga p{
+  text-align: center;
+}
+
+.imga1{
+  position: absolute;
+  left: 400px;
+  top: 60px;
+  max-width: 180px;
+}
+
+.imga2{
+  position: absolute;
+  left: 600px;
+  top: 60px;
+  max-width: 200px;
+}
+
+.imga2 p{
+  text-align: center;
+}
+.imga3{
+  position: absolute;
+  left: 800px;
+  top: 60px;
+  max-width: 200px;
+}
+
+.imga3 p{
+  text-align: center;
+}
+
+.light{
+  text-decoration: none;
+  color: white;
+}
+.light:hover{
+
+  color: orange;
+}
+
+
+.menu1{
+  width: 765px;
+  height: 920px;
+  background-color: gray;
+  position: absolute;
+  left: 480px;
+  top: 465px;
+  border: solid;
+  border-color: gray;
+  border-radius: 5px;
+}
+
+.photo1 p{
+  text-align: center
+}
+.photo1{
+  max-width: 350px;
+}
+
+.imgaa{
+  position: absolute;
+  left: 430px;
+  top: 67px;
+  max-width: 400px;
+}
+.imgaa p{
+  text-align: center;
+}
+
+.imgaa1{
+  position: absolute;
+  top: 500px;
+  max-width: 450px;
+}
+.imgaa1 p{
+  text-align: center;
+}
+
+.imgaa2{
+  position: absolute;
+  left: 350px;
+  top: 500px;
+}
+.imgaa1 p{
+  text-align: center;
+}
+
+
+.news{
+  float: left;
+  margin: 0 15px 15px 0;
+  width: 350px;
+  margin-left: 10px;
+}
+
+.new1{
+  float: left;
+  margin: 0 15px 15px 0;
+  width: 350px;
+  margin-left: 10px;
+}
+
+.new2{
+  float: left;
+  margin: 0 15px 15px 0;
+  width: 350px;
+  margin-left: 10px;
+
+}
+
+
+.jus{
+  text-align: justify;
+}
+
+.menu2{
+  width: 199px;
+  height: 920px;
+  background-color: gray;
+  position: absolute;
+  left: 1257px;
+  top: 465px;
+  border: solid;
+  border-color: gray;
+  border-radius: 5px;
+}
+
+hr{
+  border: none;
+  color: orange; 
+  background-color: orange; 
+  height: 2px; 
+}
+
+.popular img{
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0;
+  border-radius: 5px
+}
+
+
+img{
+  cursor: pointer;
+  border: 1px solid #FFF;
+}
+im:hover {
+  border: 1px solid yellow;
+}
+/* увеличенная картинка */
+#zoomout {
+  display: none;
+  position: fixed;
+  max-width: 600px;
+  height: auto;
+  z-index: 9999;
+}
+#zommout img {
+  width: 100%;
+}
+/* затемняющий фон */
+#darkphon {
+  display: none;
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  z-index: 9990;
+}
+/* кнопка закрытия */
+#closed {
+  width: 30px;
+  height: 30px;
+  background: #FFFFFF;
+  border: 1px solid #AFAFAF;
+  border-radius: 15px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+#closed i {
+  width: 30px;
+  height: 30px;
+  background: url(https://codernote.ru/files/cross.png) no-repeat center center;
+  background-size: 16px 16px;
+  display: block;
+}
