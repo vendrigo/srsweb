@@ -1,2 +1,2 @@
 # srsweb
-## https://vendrigo.guthib.io/srsweb/
+## https://vendrigo.github.io/srsweb/
